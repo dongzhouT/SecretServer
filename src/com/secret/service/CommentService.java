@@ -69,7 +69,7 @@ public class CommentService {
 		return result;
 	}
 
-	// 获取评论列表
+	//
 	public String get_comment(User user, Comment comment, int page, int perpage) {
 		Transaction ts = dao.getSession().beginTransaction();
 		String result;
