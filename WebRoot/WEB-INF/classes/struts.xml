@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--constant中的name对应 struts2-core-2.2.1.jar/ org.apache.struts2/default.properties文件中的属性名 -->
+	<constant name="struts.action.extension" value="do,action,"></constant>
+	<!-- 开发模式下使用,这样可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" /> <!--should be false when deployed -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<package name="try" extends="struts-default" abstract="true">
+		<global-results>
+			<result name="success">/primer/success.jsp</result>
+			<!-- <result name="error">/primer/error.jsp</result> -->
+		</global-results>
+		<!-- <global-exception-mappings> <exception-mapping result="error" exception=""></exception-mapping> 
+			</global-exception-mappings> -->
+	</package>
+	<package name="secret" namespace="/" extends="try">
+
+		<action name="login" class="com.secret.action.UserAction"
+			method="login">
+		</action>
+		<action name="send_pass" class="com.secret.action.bk.SendPassAction">
+			<result name="success">/primer/success.jsp</result>
+		</action>
+		<action name="upload_contacts" class="com.secret.action.UserAction"
+			method="upload_contacts">
+		</action>
+		<action name="get_contacts" class="com.secret.action.UserAction"
+			method="get_contacts">
+		</action>
+		<action name="change_code" class="com.secret.action.UserAction"
+			method="change_code">
+		</action>
+		<action name="timeline" class="com.secret.action.MessageAction"
+			method="timeline">
+		</action>
+		<action name="get_comment" class="com.secret.action.CommentAction"
+			method="get_comment">
+		</action>
+		<action name="pub_comment" class="com.secret.action.CommentAction"
+			method="pub_comment">
+		</action>
+		<action name="publish" class="com.secret.action.MessageAction"
+			method="publish">
+		</action>
+
+	</package>
+</struts>

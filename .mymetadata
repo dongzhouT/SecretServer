@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SecretServer"
+  id="myeclipse.1442975395742"
+  context-root="/SecretServer"
+  j2ee-spec="6.0"
+  archive="SecretServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

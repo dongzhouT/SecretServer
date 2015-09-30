@@ -1,0 +1,25 @@
+#MyEclipse Hibernate Properties
+#Tue Sep 29 11:24:01 CST 2015
+sessionFactoryName=com.secret.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=/SecretServer/hibernate.reveng.xml
+configFile=/SecretServer/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true
+baseDaoClass=com.secret.bean.BaseHibernateDAO
